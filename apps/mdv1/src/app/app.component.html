@@ -1,0 +1,18 @@
+
+<mat-toolbar>
+  <span class="spacer"></span>
+  <button class="menu-btn" mat-mini-fab>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="mat-app-background">
+  <mat-drawer-container class="mdv1-container" autosize>
+    <mat-drawer #drawer class="mdv1-sidenav" mode="side">
+      <p>photos</p>
+    </mat-drawer>
+    <div class="mdvi-drawer-container">
+      <mdv1-photos></mdv1-photos>
+    </div>
+  </mat-drawer-container>
+</div>
