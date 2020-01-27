@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'mdv1-list',
+  selector: 'mdv1-photos-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit {
+export class ListPhotosComponent implements OnInit {
 
   @Input() data: [{
     id: string,

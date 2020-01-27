@@ -6,14 +6,23 @@ import {PhotosModule} from './photos/photos.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@30x30/material';
 import { EditComponent } from './photos/edit/edit.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FruitsComponent } from './fruits/fruits.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListComponent } from './fruits/list/list.component';
+import { DetailsComponent } from './fruits/details/details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, FruitsComponent, ListComponent, DetailsComponent ],
   imports: [
     MaterialModule,
     BrowserModule,
     PhotosModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

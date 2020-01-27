@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@30x30/material": ["libs/material/src/index.ts"],
-      "@30x30/theme": ["libs/theme/src/index.ts"]
+      "@30x30/theme": ["libs/theme/src/index.ts"],
+      "@30x30/core": ["libs/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
