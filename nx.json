@@ -10,5 +10,22 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "mdv1": {
+      "tags": []
+    },
+    "mdv1-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mdv1"]
+    },
+    "material": {
+      "tags": []
+    },
+    "theme": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    }
+  }
 }

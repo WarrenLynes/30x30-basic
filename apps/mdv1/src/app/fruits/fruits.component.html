@@ -1,0 +1,19 @@
+<div class="container">
+  <!-- Projects List -->
+  <div class="col-50">
+    <mdv1-list
+      [projects]="fruits$ | async"
+      (selected)=selectFruit($event)
+      (deleted)="deleteFruit($event)"
+    >
+    </mdv1-list>
+  </div>
+  <!-- Fruit Details-->
+  <div class="col-50">
+    <mdv1-details
+      [project]="selectedFruit"
+      (saved)="saveFruit($event)"
+      (cancelled)="cancel()">
+    </mdv1-details>
+  </div>
+</div>
